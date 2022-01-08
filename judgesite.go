@@ -10,7 +10,7 @@ import (
 func JudgeSiteController(w http.ResponseWriter, r *http.Request) {
 	urlArr := r.URL.Query()["url"]
 	fmt.Println(urlArr)
-	
+
 	if len(urlArr) < 1 {
 		w.WriteHeader(http.StatusBadRequest)
 		fmt.Fprintf(w, "url not specified.")

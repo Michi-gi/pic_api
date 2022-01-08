@@ -186,7 +186,7 @@ func (a PixivAccess) GetPicsOfAccount(id string, illustsCount int) (ProfilesTags
 }
 
 func getPicsOnePage(id string, page int, sem chan string, resCh chan indexedIllusts, errCh chan error) {
-	url := fmt.Sprint(pixivOrigin + "/author/", id, "/pics?page=", page)
+	url := fmt.Sprint(pixivOrigin+"/author/", id, "/pics?page=", page)
 	sem <- url
 	res, err := http.Get(url)
 	if err != nil {
