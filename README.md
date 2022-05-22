@@ -20,7 +20,7 @@
 ## 対応サイト
 現時点で対応しているサイトは次の通り
 
-- [Pixiv](https://www.pixiv.net/) ([pic_api_pixiv])(https://github.com/Michi-gi/pic_api_pixiv)が必要)
+- [Pixiv](https://www.pixiv.net/) ([pic_api_pixiv](https://github.com/Michi-gi/pic_api_pixiv)が必要)
 
 ## 利用ライブラリー
 APIのリクエストのルーティングに[chi](https://github.com/go-chi/chi)を利用しています。
